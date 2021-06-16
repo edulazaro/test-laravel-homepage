@@ -51,7 +51,7 @@ class SubscriptionController extends Controller
         $subscriber->save();
 
         try {
-            Mail::to($subscriber->email)->send(new Subscribed($subscriber->email));
+            Mail::from('mailgun@mail.edulazaro.com')->to($subscriber->email)->send(new Subscribed($subscriber->email));
         } catch(\Exception $error) {
             return response()->json([
                 'success' => true,
