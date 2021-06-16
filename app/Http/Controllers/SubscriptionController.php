@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Subscribed;
 use App\Models\Subscriber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Mail;
 
 /**
  * Controller to manage subscriptions
@@ -47,6 +49,17 @@ class SubscriptionController extends Controller
         $subscriber = new Subscriber();
         $subscriber->email = $params['email'];
         $subscriber->save();
+
+        try {
+            Mail::to($subscriber->email)->send(new Subscribed($subscriber->email));
+        } catch(\Exception $error) {
+
+                return response()->json([
+                    'success' => false,
+                    'errors' => ['email' => $error->getMessage()],
+                ], 400);
+
+        }
 
         return response()->json([
             'success' => true,
