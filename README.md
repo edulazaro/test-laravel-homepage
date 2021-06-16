@@ -30,7 +30,7 @@ To install the app follow these steps:
   php artisan migrate
   ```
 
-5. Copy the `.env.example` file located in the root folder and name it as `.env`. Replace the email and database configuration for the access details you are using.
+5. Copy the `.env.example` file located in the root folder and name it as `.env`. Replace the email and database configuration for the access details you are using. Also configure SMTP settings so the email is sent correctly after subscribing. 
 
 
 6. Generate the App key by using the next command:
@@ -41,6 +41,6 @@ To install the app follow these steps:
 
 ## HOW TO START
 
-For development, use the command `php artisan serve` to start the dev server and the command `npm run watch` to watch for change.
+For development or for easily test the application, use the command `php artisan serve` to start the dev server and the command `npm run watch` to watch for change.
 
-For production you need to use apache or nginx, configurint the directory `/public as the` base folder of the app. Use the command `npm run prod` to compile and minimize the saass and JS code.
+For production you need to use apache or nginx, configuring the directory `/public` base folder of the app in the server configuration. Use the command `npm run prod` to compile and minimize the scss and the JS files.
