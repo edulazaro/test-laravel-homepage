@@ -53,12 +53,7 @@ class SubscriptionController extends Controller
         try {
             Mail::to($subscriber->email)->send(new Subscribed($subscriber->email));
         } catch(\Exception $error) {
-
-                return response()->json([
-                    'success' => false,
-                    'errors' => ['email' => $error->getMessage()],
-                ], 400);
-
+            error_log('It was not possible to send an email: ' . $error->getMessage());
         }
 
         return response()->json([
