@@ -2128,7 +2128,11 @@ var SubscriptionForm = /*#__PURE__*/function () {
             var data = res.data;
             if (data.success === undefined) throw new Exception('An error happened.');
 
-            _this.addMessage('You have been subscribed correctly.', 'success');
+            if (data.message !== undefined) {
+              _this.addMessage(data.message, 'success');
+            } else {
+              _this.addMessage('You have been subscribed correctly.', 'success');
+            }
 
             _this.fields.email.value = '';
           })["catch"](function (error) {

@@ -50,12 +50,13 @@ class SubscriptionController extends Controller
         $subscriber->email = $params['email'];
         $subscriber->save();
 
-        Mail::to($subscriber->email)->send(new Subscribed($subscriber->email));
-
         try {
-            
+            Mail::to($subscriber->email)->send(new Subscribed($subscriber->email));
         } catch(\Exception $error) {
-            error_log('It was not possible to send an email: ' . $error->getMessage());
+            return response()->json([
+                'success' => true,
+                'message' => 'Subscribed, but It was not possible to send an email: ' . $error->getMessage()
+            ], 201);
         }
 
         return response()->json([

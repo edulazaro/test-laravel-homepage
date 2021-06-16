@@ -58,8 +58,14 @@ export default class SubscriptionForm {
                     const data = res.data;
                     if (data.success === undefined) throw new Exception('An error happened.');
 
-                    this.addMessage('You have been subscribed correctly.', 'success');
+                    if (data.message !== undefined) {
+                        this.addMessage(data.message, 'success');
+                    } else {
+                        this.addMessage('You have been subscribed correctly.', 'success');
+                    }
+
                     this.fields.email.value = '';
+  
                 }).catch(error => {
 
                     if (typeof error === 'string') {
