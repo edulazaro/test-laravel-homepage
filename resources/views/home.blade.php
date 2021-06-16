@@ -119,67 +119,7 @@
                         <li>SUBSCRIPTIONS</li>
                         <li>ONE-OFF PASS</li>
                     </ul>
-                    <div class="tab event active">
-                        <div class="heading">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="/images/event.png" alt="lorem ipsum"/>
-                                    <h3>At vero eos et accusamus et iusto odio</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <ul class="pass-type">
-                                        <li>
-                                            <span class="type">Event Pass</span>
-                                            <span class="price text-highlight"><strong>£57.99</strong></span>
-                                        </li>
-                                        <li>
-                                            <span class="type">Day Pass</span>
-                                            <span class="price text-highlight"><strong>£7.99</strong></span>
-                                        </li>
-                                    </ul>
-                                    <hr>
-                                    <a href="#" class="btn btn-lg display-block">PURCHASE</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="/images/event.png" alt="lorem ipsum"/>
-                                    <h3>Nam libero tempore, cum soluta nobis est</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <ul class="pass-type">
-                                        <li>
-                                            <span class="type">Event Pass</span>
-                                            <span class="price text-highlight"><strong>£49.99</strong></span>
-                                        </li>
-                                        <li>
-                                            <span class="type">Day Pass</span>
-                                            <span class="price text-highlight"><strong>£6.99</strong></span>
-                                        </li>
-                                    </ul>
-                                    <hr>
-                                    <a href="#" class="btn btn-lg display-block">PURCHASE</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <img src="/images/event.png" alt="lorem ipsum"/>
-                                    <h3>Temporibus autem quibusdam et aut officiis</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <ul class="pass-type">
-                                        <li>
-                                            <span class="type">Event Pass</span>
-                                            <span class="price text-highlight"><strong>£80.00</strong></span>
-                                        </li>
-                                    </ul>
-                                    <hr>
-                                    <a href="#" class="btn btn-lg display-block">PURCHASE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab table">
+                    <div class="tab table active">
                         <div class="heading">
                             <i class="fas fa-check text-highlight"></i> Watch on TV, Computer, Mobile & Table
                         </div>
@@ -241,6 +181,66 @@
                                 </div>
                                 <div class="col-md-4">
                                     <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab event">
+                        <div class="heading">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/images/event.png" alt="lorem ipsum"/>
+                                    <h3>At vero eos et accusamus et iusto odio</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <ul class="pass-type">
+                                        <li>
+                                            <span class="type">Event Pass</span>
+                                            <span class="price text-highlight"><strong>£57.99</strong></span>
+                                        </li>
+                                        <li>
+                                            <span class="type">Day Pass</span>
+                                            <span class="price text-highlight"><strong>£7.99</strong></span>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <a href="#" class="btn btn-lg display-block">PURCHASE</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/images/event.png" alt="lorem ipsum"/>
+                                    <h3>Nam libero tempore, cum soluta nobis est</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <ul class="pass-type">
+                                        <li>
+                                            <span class="type">Event Pass</span>
+                                            <span class="price text-highlight"><strong>£49.99</strong></span>
+                                        </li>
+                                        <li>
+                                            <span class="type">Day Pass</span>
+                                            <span class="price text-highlight"><strong>£6.99</strong></span>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <a href="#" class="btn btn-lg display-block">PURCHASE</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="/images/event.png" alt="lorem ipsum"/>
+                                    <h3>Temporibus autem quibusdam et aut</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <ul class="pass-type">
+                                        <li>
+                                            <span class="type">Event Pass</span>
+                                            <span class="price text-highlight"><strong>£80.00</strong></span>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <a href="#" class="btn btn-lg display-block">PURCHASE</a>
                                 </div>
                             </div>
                         </div>

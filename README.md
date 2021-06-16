@@ -1,3 +1,7 @@
+## LIVE VERSION
+
+You can find a [working version of the app here](https://edulazaro.com/):
+
 ## HOW TO INSTALL
 
 To install the app follow these steps:
